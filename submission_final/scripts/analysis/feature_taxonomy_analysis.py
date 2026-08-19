@@ -94,7 +94,7 @@ def main() -> None:
         "day_boundary_policy": "statistics reset per source day before pooled moment merge",
         "day1_processed_file_sha256": hashlib.sha256(header).hexdigest(),
     }
-    (output / "phase7_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
+    (output / "feature_taxonomy_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
     print({"feature_count": len(features), "family_summary": family.to_dict(orient="records")})
 
 

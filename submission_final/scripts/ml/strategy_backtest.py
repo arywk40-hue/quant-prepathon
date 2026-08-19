@@ -35,7 +35,7 @@ SEED = 20260818
 
 
 def _write_figures(figures_root: Path, daily: pd.DataFrame, trades: pd.DataFrame, equity: pd.DataFrame) -> None:
-    destination = figures_root / "ml_phase4"
+    destination = figures_root / "part5"
     destination.mkdir(parents=True, exist_ok=True)
     if not equity.empty:
         plt.figure(figsize=(9, 4))

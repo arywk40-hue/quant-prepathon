@@ -96,7 +96,7 @@ def main() -> None:
         "nan_policy": "no imputation; PCA/correlation use complete rows only after z-scoring valid values per day",
         "pca": "per-day randomized PCA and pooled IncrementalPCA, 50 components retained",
     }
-    (output / "phase10_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
+    (output / "redundancy_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
     print({"pair_rows": len(pairwise), "pca_rows": len(pca_rows), **summary})
 
 

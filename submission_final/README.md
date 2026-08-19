@@ -55,4 +55,4 @@ No new holdout analysis was performed.
 
 ## Reproducibility
 
-The source code (`src/`) and required scripts (`scripts/`) strictly execute the logic required for Parts 1–5. The Part 5 strategy isolates the required Ridge prediction generation (`scripts/ml/phase_ml0.py`, `phase_ml3_temporal_robustness.py`, `phase_ml4_backtest.py`) to reproduce the signal and simulate the explicit rules exactly. All included findings in the final report derive directly from these audited components.
+The source code (`src/`) and required scripts (`scripts/`) strictly execute the logic required for Parts 1–5. The Part 5 strategy isolates the required Ridge prediction generation (`scripts/ml/baseline_model_training.py`, `temporal_robustness_validation.py`, `strategy_backtest.py`) to reproduce the signal and simulate the explicit rules exactly. All included findings in the final report derive directly from these audited components.

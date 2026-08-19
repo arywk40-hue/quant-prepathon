@@ -229,7 +229,7 @@ def process(repo_root: Path, config_path: Path | None = None) -> dict[str, Any]:
     write_csv(results_dir / "structural_missingness.csv", structural_rows, list(structural_rows[0]))
     write_csv(results_dir / "cross_day_warmup.csv", cross_day, list(cross_day[0]))
     write_csv(results_dir / "window_ladder_validation.csv", ladder_rows, list(ladder_rows[0]))
-    (results_dir / "phase2_scope.txt").write_text(
+    (results_dir / "missingness_scope.txt").write_text(
         "PHASE 2 SCOPE\n"
         f"expected_development_days={expected_development_days[0]}-{expected_development_days[-1]}\n"
         f"real_data_days_processed={len(processed_days)}\n"
