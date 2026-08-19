@@ -174,7 +174,7 @@ def main() -> None:
         "kpss": "not run; four independent/partly independent diagnostics satisfy the two-method requirement",
         "transition_rule": "only adjacent available day IDs; no transition bridges missing Days 65-79",
     }
-    (output / "phase6_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
+    (output / "regime_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
     print({
         "table_rows": len(table),
         "available_rows": len(available_table),

@@ -116,7 +116,7 @@ def run(repo_root: Path) -> dict[str, object]:
     write_csv(out / "sigma_events.csv", sigma_rows, list(sigma_rows[0]))
     write_csv(out / "tail_estimates.csv", hills, list(hills[0]))
     write_csv(out / "extreme_events.csv", extremes, list(extremes[0]))
-    (out / "phase5_scope.txt").write_text("PHASE 5 SCOPE\nexpected_development_days=85\navailable_development_days=70\nmissing_development_days=65-79\nholdout_days=86-108; not opened or used\nnormality_tests=Jarque-Bera and Anderson-Darling\nvolume_context=not_run_without_validated_volume_semantics\n")
+    (out / "distribution_scope.txt").write_text("PHASE 5 SCOPE\nexpected_development_days=85\navailable_development_days=70\nmissing_development_days=65-79\nholdout_days=86-108; not opened or used\nnormality_tests=Jarque-Bera and Anderson-Darling\nvolume_context=not_run_without_validated_volume_semantics\n")
     return {"normality_rows": len(normality), "sigma_rows": len(sigma_rows), "hill_rows": len(hills), "extreme_rows": len(extremes)}
 
 

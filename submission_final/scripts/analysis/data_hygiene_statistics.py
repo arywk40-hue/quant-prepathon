@@ -86,7 +86,7 @@ def run(repo_root: Path) -> dict[str, object]:
         values = np.asarray(seasonality[bin_id], dtype=float)
         seasonality_rows.append(coverage_row({"scope": "pooled_available_days", "bin_seconds": bin_id * SEASONAL_BIN_SECONDS, "bin_end_seconds": (bin_id + 1) * SEASONAL_BIN_SECONDS - 1, "day_count": int(np.isfinite(values).sum()), "mean_realized_1s_volatility": float(np.nanmean(values)) if np.isfinite(values).any() else np.nan, "std_across_days": float(np.nanstd(values, ddof=1)) if np.isfinite(values).sum() > 1 else np.nan}))
 
-    write_csv(quality_dir / "descriptive_stats.csv", descriptive_rows, list(descriptive_rows[0]))
+    write_csv(quality_dir / "descriptive_statistics.csv", descriptive_rows, list(descriptive_rows[0]))
     write_csv(diagnostics_dir / "acf_returns.csv", acf_rows, list(acf_rows[0]))
     write_csv(diagnostics_dir / "volatility_seasonality.csv", seasonality_rows, list(seasonality_rows[0]))
     volume_status = [coverage_row({"status": "not_run", "reason": "no volume-like feature semantics validated before Part 1; no unsupported volume claim made"})]
@@ -102,7 +102,7 @@ def run(repo_root: Path) -> dict[str, object]:
     figures_dir.mkdir(parents=True, exist_ok=True)
     plt.savefig(figures_dir / "volatility_seasonality.png", dpi=140)
     plt.close()
-    (quality_dir / "phase4_scope.txt").write_text(
+    (quality_dir / "data_hygiene_scope.txt").write_text(
         "PHASE 4 SCOPE\nexpected_development_days=85\navailable_development_days=70\nmissing_development_days=65-79\n"
         "holdout_days=86-108; not opened or used\ncalculations=within-day only; no cross-day lag/return operations\n"
         f"processed_days={day_count}\nvolume_analysis=not_run_without_validated_volume_semantics\n"

@@ -98,7 +98,7 @@ def main() -> None:
         "fdr_alpha": FDR_ALPHA, "fdr_method": "Benjamini-Hochberg separately for Pearson and Spearman aggregate tests",
         "missing_value_policy": "pairwise valid observations only; no imputation; pair counts emitted",
     }
-    (output / "phase9_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
+    (output / "predictive_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
     print({"per_day_rows": len(detail), "aggregate_rows": len(aggregate), "pearson_rejections": int(aggregate.pearson_fdr_reject.sum()), "spearman_rejections": int(aggregate.spearman_fdr_reject.sum())})
 
 

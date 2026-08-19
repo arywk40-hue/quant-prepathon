@@ -43,7 +43,7 @@ The parser is used consistently by:
 - [`src/analytics/taxonomy.py`](../src/analytics/taxonomy.py)
 - [`src/ebx/ml/feature_selection.py`](../src/ebx/ml/feature_selection.py)
 - [`src/ebx/ml/temporal_robustness.py`](../src/ebx/ml/temporal_robustness.py)
-- [`scripts/analysis/phase7_part4a.py`](../scripts/analysis/phase7_part4a.py)
+- [`scripts/analysis/feature_taxonomy_analysis.py`](../scripts/analysis/feature_taxonomy_analysis.py)
 
 ## 2. Current missing-value handling
 
@@ -124,7 +124,7 @@ No material impact was found.
 Reason:
 
 - Part 4 taxonomy and redundancy work off parsed family/subfamily labels and observed warm-up behavior
-- [`scripts/analysis/phase7_part4a.py`](../scripts/analysis/phase7_part4a.py) groups by `family` and retains nominal-vs-actual deviation status
+- [`scripts/analysis/feature_taxonomy_analysis.py`](../scripts/analysis/feature_taxonomy_analysis.py) groups by `family` and retains nominal-vs-actual deviation status
 - [`scripts/plot_part4.py`](../scripts/plot_part4.py) consumes those outputs; it does not try to infer hidden formulas from the NaN pattern
 
 The clarification strengthens the interpretation of the figures, but does not require recomputation.

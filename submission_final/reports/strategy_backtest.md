@@ -120,11 +120,11 @@ The isolated output namespace is `results/ml/backtest_baseline/` and contains:
 - `W1_manifest.json`, `W2_manifest.json`, and `W3_manifest.json`
 - `day84_sensitivity.json`
 
-Figures are under `figures/ml_phase4/`: `equity_curve.png`, `daily_pnl.png`, and `trade_return_distribution.png`.
+Figures are under `figures/part5/`: `equity_curve.png`, `daily_pnl.png`, and `trade_return_distribution.png`.
 
 ## Integrity and limitations
 
-- The implementation is in `src/ebx/ml/backtest.py`; the reproducible entry point is `scripts/ml/phase_ml4_backtest.py`.
+- The implementation is in `src/ebx/ml/backtest.py`; the reproducible entry point is `scripts/ml/strategy_backtest.py`.
 - No raw CSV, development freeze, holdout freeze, aggregate IC, frozen feature, baseline, train-only selection, temporal robustness, or Day-84 forensic artifact was modified.
 - No Days 65–79 were fabricated or loaded. Days 86–108 were not loaded, inspected, or used; manifests explicitly contain `holdout_days_loaded: []`.
 - There are no quantity, bid/ask, fee, or contract-value fields in the available schema. P&L is therefore normalized unit-notional P&L, not currency P&L.

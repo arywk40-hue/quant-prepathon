@@ -13,7 +13,7 @@ from src.cleaning.missingness import (
 from src.ingestion.discovery import discover_days
 from src.ingestion.loader import load_day, schema_record, write_parquet
 from src.ingestion.validation import validate_price, validate_schema, validate_timestamps
-from scripts.analysis.phase2_process import configured_development_days, load_config
+from scripts.analysis.data_missingness_analysis import configured_development_days, load_config
 
 
 def write_fixture(path: Path, rows: list[list[str]]) -> None:

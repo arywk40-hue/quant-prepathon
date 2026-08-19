@@ -139,7 +139,7 @@ def main() -> None:
         "evidence_thresholds": {"strong": {"abs_corr": .90, "nrmse": .50, "sign": .80, "days": 50}, "moderate": {"abs_corr": .70, "nrmse": .80, "sign": .65, "days": 35}, "weak": {"abs_corr": .40, "days": 20}},
         "match_policy": "candidate matches are hypotheses supported by multiple metrics and cross-day stability; no identity is confirmed",
     }
-    (repo_root / "results" / "features" / "phase8_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
+    (repo_root / "results" / "features" / "candidate_matching_scope.json").write_text(json.dumps(scope, indent=2) + "\n")
     print({"score_rows": len(scores), "best_rows": len(best), "daily_best_rows": len(daily_best), "tiers": scored.evidence_tier.value_counts().to_dict()})
 
 
