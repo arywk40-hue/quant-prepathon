@@ -1,0 +1,8 @@
+PHASE 4 SCOPE
+expected_development_days=85
+available_development_days=70
+missing_development_days=65-79
+holdout_days=86-108; not opened or used
+calculations=within-day only; no cross-day lag/return operations
+processed_days=70
+volume_analysis=not_run_without_validated_volume_semantics

@@ -1,0 +1,11 @@
+{
+  "deterministic": true,
+  "holdout_days_loaded": [],
+  "input_sha256": {
+    "config.yaml": "2562097334755551b45d2492cbe3bcff98df26fc0ddfbc30cdb968c675b5f94b",
+    "development_freeze.json": "916be8b0c6d9bff52570ca1759b84e78eb782ad20140a569a6c1b7df5aa737fe",
+    "temporal_run_manifest.json": "dd84ad1ea8e1f23018ac3b852e494f26f5982057c32040f15377e6e889c84325"
+  },
+  "primary_strategy": "primary_sign_strategy",
+  "random_null_seed": 20260818
+}

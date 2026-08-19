@@ -1,0 +1,7 @@
+PHASE 5 SCOPE
+expected_development_days=85
+available_development_days=70
+missing_development_days=65-79
+holdout_days=86-108; not opened or used
+normality_tests=Jarque-Bera and Anderson-Darling
+volume_context=not_run_without_validated_volume_semantics

@@ -1,0 +1,10 @@
+from_regime,to_regime,count
+mean-reverting,mean-reverting,0
+momentum / persistent,mean-reverting,0
+random-walk / inconclusive,mean-reverting,0
+mean-reverting,momentum / persistent,0
+momentum / persistent,momentum / persistent,51
+random-walk / inconclusive,momentum / persistent,8
+mean-reverting,random-walk / inconclusive,0
+momentum / persistent,random-walk / inconclusive,8
+random-walk / inconclusive,random-walk / inconclusive,1

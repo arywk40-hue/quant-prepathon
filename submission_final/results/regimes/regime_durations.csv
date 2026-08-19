@@ -1,0 +1,4 @@
+regime,run_count,average_duration_days,max_duration_days
+mean-reverting,0,,0
+momentum / persistent,10,6.1,18
+random-walk / inconclusive,8,1.125,2

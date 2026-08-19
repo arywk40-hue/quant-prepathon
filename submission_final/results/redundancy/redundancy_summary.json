@@ -1,0 +1,10 @@
+{
+  "pair_count": 238395,
+  "pairs_abs_pearson_ge_0_9": 9455,
+  "pairs_abs_spearman_ge_0_9": 9000,
+  "median_abs_pearson": 0.13190944067606963,
+  "median_abs_spearman": 0.15824626449119947,
+  "expected_development_days": 85,
+  "available_development_days": 70,
+  "missing_development_days": 15
+}

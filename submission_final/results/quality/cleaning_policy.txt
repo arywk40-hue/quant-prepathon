@@ -1,0 +1,6 @@
+PHASE 4 CLEANING POLICY
+Raw CSVs remain untouched. Structural leading NaNs are preserved.
+Unexpected internal/trailing feature missingness is not imputed; feature-specific validity masks determine usable observations.
+Price observations are used only when finite and positive for return construction; invalid observations are excluded from that calculation and never silently replaced.
+Days with shorter sessions remain separate day records. No day concatenation is used for lagged calculations.
+Volume seasonality is not run because no volume-like feature semantics were validated before Part 1.
